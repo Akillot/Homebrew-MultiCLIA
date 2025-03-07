@@ -1,23 +1,18 @@
-class Multiclia < Formula
-  desc "MultiCLIA — convenient console manager"
+class MultiClia < Formula
+  desc "Versatile CLI tool to enhance the terminal experience"
   homepage "https://github.com/Akillot/MultiCLIA"
-  url "https://github.com/ТВОЙ_ГИТХАБ/multiclia/releases/download/v1.0.0/multiclia-1.0.0-macos.tar.gz"
-  sha256 "СЮДА_НУЖНО_ВСТАВИТЬ_SHA256_ТВОЕГО_АРХИВА"
+  url "https://github.com/Akillot/MultiCLIA/releases/download/v1.1.1/MultiCLIA-1.0-jar-with-dependencies.jar"
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   license "MIT"
 
-  depends_on "openjdk@17"  # Указываем, что нужна Java 17
+  depends_on "openjdk"
 
   def install
-    libexec.install Dir["*"]
-    (bin/"multiclia").write <<~EOS
-      #!/bin/bash
-      export JAVA_HOME=$(brew --prefix openjdk@17)
-      exec "$JAVA_HOME/bin/java" -jar "#{libexec}/multiclia.jar" "$@"
-    EOS
-    chmod 0755, bin/"multiclia"
+    libexec.install "MultiCLIA-1.0-jar-with-dependencies.jar"
+    bin.write_jar_script libexec/"MultiCLIA-1.0-jar-with-dependencies.jar", "multiclia"
   end
 
   test do
-    system "#{bin}/multiclia", "--version"
+    system "#{bin}/multiclia", "--help"
   end
 end
