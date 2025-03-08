@@ -1,4 +1,4 @@
-class MultiClia < Formula
+class Multiclia < Formula
   desc "Versatile CLI tool to enhance the terminal experience"
   homepage "https://github.com/Akillot/MultiCLIA"
   url "https://github.com/Akillot/MultiCLIA/releases/download/v1.1.1/MultiCLIA-1.0-jar-with-dependencies.jar"
