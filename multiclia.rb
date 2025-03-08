@@ -2,7 +2,7 @@ class Multiclia < Formula
   desc "Versatile CLI tool to enhance the terminal experience"
   homepage "https://github.com/Akillot/MultiCLIA"
   url "https://github.com/Akillot/MultiCLIA/releases/download/java/MultiCLIA-1.0-jar-with-dependencies.jar"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5" # убедитесь, что это правильная sha256 для файла
+  sha256 "dcc898549202d78faaa7189cbd7ff0ccf598d56688778af4285db8ebc01fdc95"
   license "MIT"
 
   depends_on "openjdk"
