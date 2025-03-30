@@ -1,2 +1,2 @@
 # Homebrew-MultiCLIA
-Version for Homebrew installation (MacOS)
+MultiCLIA - Homebrew installation (MacOS)
