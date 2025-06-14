@@ -1,15 +1,15 @@
 class Multiclia < Formula
-  desc "Versatile CLI tool to enhance the terminal experience"
+  desc "Versatile CLI tool to enhance the terminal experience. MultiCLIA 3.0 Highland."
   homepage "https://github.com/Akillot/MultiCLIA"
-  url "https://github.com/Akillot/MultiCLIA/releases/download/java/MultiCLIA-1.0-jar-with-dependencies.jar"
-  sha256 "dcc898549202d78faaa7189cbd7ff0ccf598d56688778af4285db8ebc01fdc95"
+  url "https://github.com/Akillot/MultiCLIA/releases/download/final_update/MultiCLIA-3.0-jar-with-dependencies.jar"
+  sha256 "bd29c123d01b25f9be376e98985413432dea715091142807b1bb3850ae51c63f"
   license "MIT"
 
   depends_on "openjdk"
 
   def install
-    libexec.install "MultiCLIA-1.0-jar-with-dependencies.jar"
-    bin.write_jar_script libexec/"MultiCLIA-1.0-jar-with-dependencies.jar", "multiclia"
+    libexec.install "MultiCLIA-3.0-jar-with-dependencies.jar"
+    bin.write_jar_script libexec/"MultiCLIA-3.0-jar-with-dependencies.jar", "multiclia"
   end
 
   test do
